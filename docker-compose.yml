@@ -36,6 +36,8 @@ services:
   ollama-pull-model:
     image: ollama/ollama
     container_name: ollama-pull-model
+    environment:
+      - OLLAMA_HOST=ollama
     volumes:
       - ollama-data:/root/.ollama
     depends_on:
