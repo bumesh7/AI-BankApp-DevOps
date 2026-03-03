@@ -109,4 +109,4 @@ jobs:
             
             # Pull and Deploy using the app-tier.yml transferred via SCP
             docker compose -f app-tier.yml pull
-            docker compose -f app-tier.yml up -d
+            docker compose -f app-tier.yml up -d --build
